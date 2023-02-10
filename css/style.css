@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--White);
+  padding: 7.5rem 10rem;
+}
+
+.star-icon {
+  background-image: url(../images/icon-star.svg);
+  width: 1rem;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top .top-left {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.top-left h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    body{
+        padding: 7rem 5rem;
+    }
+
+  .top-left {
+    width: 300px;
+  }
+
+  .top-left h1 {
+    font-size: 3rem;
+  }
+
+  .top-right{
+    margin: 0rem 2rem;
+  }
+}
+
+.top-left p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--Dark-Grayish-Magenta);
+}
+.top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.rating-container {
+  display: flex;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 1.5rem;
+  gap: 2rem;
+  border-radius: 5px;
+  justify-content: center;
+}
+.top-right:first-child {
+  padding-right: 5rem;
+}
+.rating-stars {
+  display: flex;
+  gap: 0.5rem;
+}
+.top-right > *:nth-child(1) {
+  transform: translateX(-4rem);
+}
+.top-right > *:nth-child(2) {
+  transform: translateX(-2rem);
+}
+
+.top-right strong {
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+  font-size: 1.1rem;
+}
+
+.bottom {
+  display: flex;
+  gap: 2rem;
+}
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 2.5rem 2rem;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.card .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.profile .profile-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-data strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.profile-data span {
+  color: var(--Soft-Pink);
+  font-size: 1.1rem;
+}
+.card p {
+  font-size: 17px;
+  color: white;
+  line-height: 1.5rem;
+}
+
+.bottom > *:nth-child(1) {
+  transform: translateY(-4rem);
+}
+.bottom > *:nth-child(2) {
+  transform: translateY(-2rem);
+}
+@media only screen and (max-width: 950px){
+    body{
+        padding:4rem 2rem;
+    }
+    .top{
+        flex-direction: column;
+        align-items: center;
+    text-align: center;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    .bottom > *:nth-child(1) {
+        transform: translateY(0);
+      }
+      .bottom > *:nth-child(2) {
+        transform: translateY(0);
+      }
+      .top-right > *:nth-child(1) {
+        transform: translateX(0);
+      }
+      .top-right > *:nth-child(2) {
+        transform: translateX(0);
+      }
+}
+@media only screen and (max-width: 450px){
+    .top-left{
+        width:auto !important;
+    }
+    .top-left h1{
+        font-size: 2rem;
+    }
+
+}
