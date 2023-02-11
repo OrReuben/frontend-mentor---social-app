@@ -191,3 +191,8 @@ body {
     }
 
 }
+@media only screen and (max-height: 810px){
+    body{
+        padding:5rem 10rem
+    }
+}
